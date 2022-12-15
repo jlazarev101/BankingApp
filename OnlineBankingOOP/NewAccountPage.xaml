@@ -1,0 +1,35 @@
+﻿<Window x:Class="OnlineBankingOOP.NewAccountPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineBankingOOP"
+        mc:Ignorable="d"
+        Title="New Account Page " Height="539" Width="363" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Canvas Margin="0,0,0,4">
+        <Label x:Name="lblTitleNewAccountPage" Content="Start a Savings Account" Canvas.Left="86" Canvas.Top="20" HorizontalAlignment="Left" VerticalAlignment="Center" Width="202" RenderTransformOrigin="0.216,2.213" FontFamily="Microsoft YaHei" FontWeight="Bold" FontSize="16"/>
+        <Image Height="34" Canvas.Left="4" Canvas.Top="469" Width="38" Source="/Images/gb.jpg" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="41" TextWrapping="Wrap" Text="Home" Canvas.Top="476" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.49,-0.249" MouseLeftButtonUp="Home" Cursor="Hand"/>
+        <Menu Height="20" Width="363" OpacityMask="#FF3737BA" Foreground="#FF141C3F" Background="#FF19F0B7" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Canvas x:Name="Canvas" Height="392" Width="363" HorizontalAlignment="Center" Canvas.Top="56" VerticalAlignment="Top" Loaded="Canvas1_Loaded">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFDFE053" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Label x:Name="lblNewAccPage" Content="lblNewAccPage" Canvas.Left="72" Canvas.Top="56" Width="291" Foreground="#FFFAEEEE" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label Content="You are opening a new Savings Account" Canvas.Left="93" Canvas.Top="252" FontWeight="Bold" Foreground="#FFFAEDED" RenderTransformOrigin="0.419,-0.206" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+            <Button x:Name="btnSubmitLogin" Content="Create New Savings Account " Canvas.Left="125" Canvas.Top="341" Width="202" FontWeight="Bold" Background="#FF19F0B7" Height="20" Click="Button_Click" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button.Effect>
+                    <DropShadowEffect/>
+                </Button.Effect>
+            </Button>
+            <Label Content="Banking Details" Canvas.Left="226" Canvas.Top="221" FontWeight="bold" Foreground="#FFF6E00F" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Label x:Name="lblInitDep" Content="Initial Deposit" Canvas.Left="93" Canvas.Top="296" HorizontalAlignment="Center" VerticalAlignment="Top" FontWeight="Bold"/>
+            <TextBox x:Name="txtInitDep" Canvas.Left="204" TextWrapping="Wrap" Canvas.Top="300" Width="120" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Canvas>
+        <Label x:Name="lblClientNotice" Content="    In this section, you can create new savings accounts. &#xA;           We already have your Personal Details, &#xA;    so all you will need to do is depositing any amount &#xA;           to your new account and it is all set up.&#xD;&#xA;    " Canvas.Top="173" HorizontalAlignment="Left" VerticalAlignment="Top" Width="374" FontSize="14" FontWeight="Bold"/>
+
+    </Canvas>
+</Window>

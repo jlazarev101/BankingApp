@@ -1,0 +1,27 @@
+﻿<Window x:Class="OnlineBankingOOP.SavingsAccPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OnlineBankingOOP"
+        mc:Ignorable="d"
+        Title="Savings Account" Height="539" Width="363" ResizeMode="NoResize" WindowStyle="None" WindowStartupLocation="CenterScreen">
+    <Canvas Loaded="Canvas_Loaded">
+        <Menu Height="20" Width="363" HorizontalAlignment="Left" VerticalAlignment="Center" OpacityMask="#FF3737BA" Foreground="#FF141C3F" Background="#FF19F0B7"/>
+        <Label x:Name="transactionsLbl" Content="Account Transactions" Canvas.Left="83" Canvas.Top="254" HorizontalAlignment="Left" VerticalAlignment="Center" FontWeight="Bold" FontSize="14"/>
+        <Canvas Height="153" Width="363" HorizontalAlignment="Center" VerticalAlignment="Top" Canvas.Top="76" Canvas.Left="-1">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF49F616" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Label x:Name="Currentlbl" Content="SAVINGS ACCOUNT  BALANCE" Canvas.Left="60" Canvas.Top="-45" FontWeight="Bold" FontSize="16" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FF0C0C0C"/>
+            <Label x:Name="lblSavingsBal" Content="addBalanceHere" Canvas.Left="108" Canvas.Top="48" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"/>
+        </Canvas>
+        <Image Height="34" Canvas.Top="476" Width="38" Source="/Images/gb.jpg" Canvas.Left="8" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgv" Height="160" Canvas.Top="294" Width="362" RenderTransformOrigin="0.582,0.379" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+        <TextBlock Canvas.Left="48" TextWrapping="Wrap" Text="Home" Canvas.Top="483" FontWeight="Bold" FontSize="15" RenderTransformOrigin="0.49,-0.249" MouseLeftButtonUp="Home" HorizontalAlignment="Left" VerticalAlignment="Top" Cursor="Hand"/>
+        <Button x:Name="btnUpdate" Content="Update" Canvas.Left="243" Canvas.Top="256" Width="110" Height="27" Click="btnUpdate_Click" FontWeight="Bold" Background="#FF44E515" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+    </Canvas>
+</Window>
